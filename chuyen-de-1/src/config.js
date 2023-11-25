@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://warehouse-management-api.vercel.app/v1';

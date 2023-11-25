@@ -1,0 +1,1072 @@
+{
+	"info": {
+		"_postman_id": "8d74c924-947d-46fe-9ce1-f7ce18a377d4",
+		"name": "QLKhoHang",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23781877",
+		"_collection_link": "https://warped-escape-361352.postman.co/workspace/Team-Workspace~36da56de-67f4-446a-8736-3bcdf09d41ea/collection/23781877-8d74c924-947d-46fe-9ce1-f7ce18a377d4?action=share&source=collection_link&creator=23781877"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "minhthang",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123123",
+							"type": "text"
+						},
+						{
+							"key": "confirmPassword",
+							"value": "123123",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "hcm",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0123123",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "th@mail.comjjjjq",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://warehouse-management-api.vercel.app/v1/auth/register",
+					"protocol": "https",
+					"host": [
+						"warehouse-management-api",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AC1: Đăng kí thành công",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "minhthang1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "hcm",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0123456",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "thang1@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://warehouse-management-api.vercel.app/v1/auth/register",
+							"protocol": "https",
+							"host": [
+								"warehouse-management-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "276"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Oct 2023 08:15:05 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"114-KzMRQGk9BxyteYUNkVBoNry3vbM\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "sin1::iad1::9dj78-1698048905533-63c602fc9713"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"minhthang1\",\n    \"email\": \"thang1@gmail.com\",\n    \"password\": \"$2a$10$kKO1VdDK3udkvSLkEfiN0Olo4wB/1zHkdP.dykVO1kOE/TnbXAwOO\",\n    \"address\": \"hcm\",\n    \"phone\": 123456,\n    \"_id\": \"65362b891a33dbeb7c1cb498\",\n    \"createdAt\": \"2023-10-23T08:15:05.830Z\",\n    \"updatedAt\": \"2023-10-23T08:15:05.830Z\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "AC2: Không nhập username",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "minhthang2",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "hcm",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01234567",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "thang2@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://warehouse-management-api.vercel.app/v1/auth/register",
+							"protocol": "https",
+							"host": [
+								"warehouse-management-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "354"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Oct 2023 08:16:24 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"162-l6ugr7CYXLvyMxRdT4e2bkFpcrM\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "sin1::iad1::bdm4f-1698048983877-22586bd07f20"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errors\": {\n        \"username\": {\n            \"name\": \"ValidatorError\",\n            \"message\": \"Path `username` is required.\",\n            \"properties\": {\n                \"message\": \"Path `username` is required.\",\n                \"type\": \"required\",\n                \"path\": \"username\"\n            },\n            \"kind\": \"required\",\n            \"path\": \"username\"\n        }\n    },\n    \"_message\": \"User validation failed\",\n    \"name\": \"ValidationError\",\n    \"message\": \"User validation failed: username: Path `username` is required.\"\n}"
+				},
+				{
+					"name": "AC3: Trùng username",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "minhthang",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "hcm",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0123123",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "th@mail.comjjjjq",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://warehouse-management-api.vercel.app/v1/auth/register",
+							"protocol": "https",
+							"host": [
+								"warehouse-management-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Oct 2023 08:12:05 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"21-yGRsRwztwWD5UYkk0mac2oNktDU\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "sin1::iad1::fqttz-1698048725297-12217d306d8d"
+						}
+					],
+					"cookie": [],
+					"body": "\"username property is duplicated\""
+				},
+				{
+					"name": "AC4: Thiếu password",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "minhthang2",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "confirmPassword",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "hcm",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01234567",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "thang2@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://warehouse-management-api.vercel.app/v1/auth/register",
+							"protocol": "https",
+							"host": [
+								"warehouse-management-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Oct 2023 08:17:57 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"26-3515iC1V8vBqF4BGR+qFLAejbbI\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "sin1::iad1::f4qq5-1698049077149-89325432ec4d"
+						}
+					],
+					"cookie": [],
+					"body": "\"Missing password or confirm password\""
+				},
+				{
+					"name": "AC5: Password và confirm pasword không giống nhau",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "minhthang2",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1231234",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "hcm",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01234567",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "thang2@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://warehouse-management-api.vercel.app/v1/auth/register",
+							"protocol": "https",
+							"host": [
+								"warehouse-management-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Oct 2023 08:19:58 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"30-2lrVHkQ09mhnWDXRRbZ6q21UsM0\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "sin1::iad1::ndlns-1698049197978-49bfe8fe9aad"
+						}
+					],
+					"cookie": [],
+					"body": "\"Password and confirm password are not the same\""
+				},
+				{
+					"name": "AC6: Không nhập email",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "minhthang2",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "hcm",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01234567",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "thang2@gmail.com",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://warehouse-management-api.vercel.app/v1/auth/register",
+							"protocol": "https",
+							"host": [
+								"warehouse-management-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "333"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Oct 2023 08:21:00 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"14d-kquabMVqmcmJBKGy0iCkcp0yogY\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "sin1::iad1::58cj9-1698049260406-cb8f7e0b39a8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errors\": {\n        \"email\": {\n            \"name\": \"ValidatorError\",\n            \"message\": \"Path `email` is required.\",\n            \"properties\": {\n                \"message\": \"Path `email` is required.\",\n                \"type\": \"required\",\n                \"path\": \"email\"\n            },\n            \"kind\": \"required\",\n            \"path\": \"email\"\n        }\n    },\n    \"_message\": \"User validation failed\",\n    \"name\": \"ValidationError\",\n    \"message\": \"User validation failed: email: Path `email` is required.\"\n}"
+				},
+				{
+					"name": "AC7: Trùng email",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "minhthang2",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "hcm",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01234567",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "thang1@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://warehouse-management-api.vercel.app/v1/auth/register",
+							"protocol": "https",
+							"host": [
+								"warehouse-management-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Oct 2023 08:23:08 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"1e-QZ5wyBK6vRzLnvTMBmhjYOSY2aE\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "sin1::iad1::9dj78-1698049388554-d14bf575e5f4"
+						}
+					],
+					"cookie": [],
+					"body": "\"email property is duplicated\""
+				},
+				{
+					"name": "AC8: Không nhập sdt",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "minhthang2",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "hcm",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01234567",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "thang2@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://warehouse-management-api.vercel.app/v1/auth/register",
+							"protocol": "https",
+							"host": [
+								"warehouse-management-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "333"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Oct 2023 08:24:18 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"14d-8i79sNTF8UThWLjFd/qKPPbvK2Y\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "sin1::iad1::5lr2z-1698049457757-1ea5a761c2a8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errors\": {\n        \"phone\": {\n            \"name\": \"ValidatorError\",\n            \"message\": \"Path `phone` is required.\",\n            \"properties\": {\n                \"message\": \"Path `phone` is required.\",\n                \"type\": \"required\",\n                \"path\": \"phone\"\n            },\n            \"kind\": \"required\",\n            \"path\": \"phone\"\n        }\n    },\n    \"_message\": \"User validation failed\",\n    \"name\": \"ValidationError\",\n    \"message\": \"User validation failed: phone: Path `phone` is required.\"\n}"
+				},
+				{
+					"name": "AC9: Trùng sdt",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "minhthang2",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "hcm",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0123456",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "thang2@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://warehouse-management-api.vercel.app/v1/auth/register",
+							"protocol": "https",
+							"host": [
+								"warehouse-management-api",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Oct 2023 08:25:02 GMT"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"1e-n6sTTqMX1l3x+x6cP9HrpqmxsgQ\""
+						},
+						{
+							"key": "Server",
+							"value": "Vercel"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains; preload"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Vercel-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Vercel-Id",
+							"value": "sin1::iad1::htlvt-1698049502508-d173c48a0027"
+						}
+					],
+					"cookie": [],
+					"body": "\"phone property is duplicated\""
+				}
+			]
+		}
+	]
+}

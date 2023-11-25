@@ -1,0 +1,33 @@
+{
+    "wares" :[
+        {
+            "_id": "653b7612faa59adc23ea996e",
+                "wareHouseName": "A190",
+                "address": " 602 Vo van ngan",
+                "category": "65375979ab0b0b7326bbd364",
+                "capacity": "1200m2",
+                "monney": 6000,
+                "status": "Tot",
+                "description": "Kho lanh voi dien tich 1200m2",
+                "owner": "6539131d3d09d1cd2b68e1cf",
+                "createdAt": "2023-10-27T08:34:26.246Z",
+                "updatedAt": "2023-10-30T01:36:30.396Z",
+                "__v": 0
+        },
+        {
+            
+            "_id": "653b7612faa59adc23ea996a",
+                "wareHouseName": "A200",
+                "address": " 602 dau buoi",
+                "category": "65375979ab0b0b7326bbd364",
+                "capacity": "1200m2",
+                "monney": 6000,
+                "status": "Tot",
+                "description": "Kho lanh voi dien tich 1200m2",
+                "owner": "6539131d3d09d1cd2b68e1cf",
+                "createdAt": "2023-10-27T08:34:26.246Z",
+                "updatedAt": "2023-10-30T01:36:30.396Z",
+                "__v": 0
+        }
+    ]
+}
